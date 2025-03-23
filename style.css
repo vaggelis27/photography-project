@@ -1,0 +1,123 @@
+/* Body styles */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  text-align: center;
+  background-image: linear-gradient(
+    180deg,
+    rgb(48, 41, 80),
+    rgba(0, 204, 255, 0.342)
+  );
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: rgb(10, 63, 80);
+  }
+}
+
+/* Paragraph styles */
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3em;
+  font-weight: 500;
+  line-height: 1.7em;
+  color: #e8e8eb;
+}
+
+h1 {
+  color: white;
+}
+
+.content {
+  background: url('./image/Nature-1.jpg') center/cover no-repeat;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Sidebar styles */
+.sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #050e2c9f;
+  overflow-x: hidden;
+  padding-top: 20px;
+  border-radius: 20;
+}
+
+.sidebar a {
+  padding: 6px 8px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #e3d8d8;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #ffae00;
+}
+
+/* Page content */
+.section {
+  margin-left: 160px;
+  padding: 10px;
+}
+
+/* Gallery styles */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 5px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #111;
+}
+
+.gallery-item {
+  text-align: center;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.gallery-item p {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #2e1253;
+}
+
+.gallery-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.gallery-item a p:hover {
+  color: #ffae00;
+  text-decoration: underline;
+}
+
+/* Portraits styles */
+.Portraits {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.Portraits img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
